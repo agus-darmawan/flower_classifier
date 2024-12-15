@@ -1,5 +1,4 @@
 version: "3.9"
-name: flask
 services:
   flask:
     restart: unless-stopped
@@ -12,8 +11,6 @@ services:
           cpus: "1.0"
           memory: 512M
     ports:
-      - mode: ingress
-        target: 5001
-        published: 5001
+      - "5002:5000"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5001/"]
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
