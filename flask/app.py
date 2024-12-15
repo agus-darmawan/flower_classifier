@@ -6,6 +6,8 @@ from werkzeug.utils import secure_filename
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import RandomFlip
 
+# test
+
 app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
