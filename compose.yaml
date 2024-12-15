@@ -11,6 +11,6 @@ services:
           cpus: "1.0"
           memory: 512M
     ports:
-      - "5002:5000"
+      - "5000:5000"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5000/"]
